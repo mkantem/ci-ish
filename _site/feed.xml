@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CI-ISH</title>
+    <description>Colloque International de l&apos;Institut des Sciences Humaines
+</description>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 04 Aug 2025 16:41:12 +0000</pubDate>
+    <lastBuildDate>Mon, 04 Aug 2025 16:41:12 +0000</lastBuildDate>
+    <generator>Jekyll v4.4.1</generator>
+    
+  </channel>
+</rss>

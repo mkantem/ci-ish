@@ -1,0 +1,36 @@
+- inverted: 
+  img: icon-about.jpeg
+  name: Theme, Vision, Mission
+  info: En savoir plus sur notre thème, notre vision et notre mission
+  link: /about
+
+- inverted: timeline-inverted
+  img: icon-agenda.jpeg
+  name: Programme
+  info: Voir le programme du colloque
+  link: /agenda
+
+- inverted: 
+  img: icon-team.jpeg
+  name: Team
+  info: Les membres de la commission d'organisation
+  link: /team
+
+- inverted: timeline-inverted
+  img: icon-venue.jpeg
+  name: Salle
+  info: En savoir plus sur le lieu ou se tiendra le colloque
+  link: /venue
+
+- inverted: timeline-inverted
+  img: booklet-icon.png
+  name: Appel à contribution
+  info: Consultez ou téléchargez l'appel à contribution
+  link: /booklet
+  
+- inverted: 
+  img: icon-faq.jpeg
+  name: FAQs
+  info: Une question ? Vous trouverez de nombreuses réponses dans notre FAQ.
+  link: /faqs
+

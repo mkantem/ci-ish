@@ -1,0 +1,26 @@
+- title: Dr Nafogo COULIBALY
+  name: Name-1
+  subtitle: Président
+  img: nafogo.png
+  thumbnail: nafogo.png
+  alt: Picture of Nafogo Coulibaly
+  topic: Commission d'organisation
+  description: Président de la commission d'organisation
+
+- title: Dr Kassim TRAORE
+  name: Name-2
+  subtitle: Vice-président
+  img: kassim.jpg
+  thumbnail: kassim.jpg
+  alt: Picture of Kassim TRAORE
+  topic: Commission d'organisation
+  description: Vice-président de la commission d'organisation
+
+- title: Agents de l'ISH
+  name: Name-3
+  subtitle: Membres
+  img: logo_ish_2.png
+  thumbnail: logo_ish_2.png
+  alt: Logo ISH
+  topic: Commission d'organisation
+  description: l’organisation du colloque impliquera tous les chercheurs de l’ISH, le personnel d’appui ainsi que les représentants des universités et institutions culturelles partenaires.

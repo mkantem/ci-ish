@@ -1,0 +1,27 @@
+---
+layout: 2025_default
+permalink: /faqs
+title: Foire aux questions (FAQ)
+published: true
+---
+    <!--background color-->
+    <script type="text/javascript">
+        document.write ('<body style="background: Gainsboro; background-attachment: fixed;">')
+    </script>
+
+    <div class="event black-frame">
+      <h1 class="title">{{ page.title }}</h1>
+
+      <p>Vous trouverez ci-dessous une liste de questions fréquemment posées (FAQ).<p>
+        <ol>
+            {% for faq in site.data.twenty_25.faqs %}
+                <li><b>{{ faq.question }}</b>
+                    <br>{{ faq.answer }}<br><br>
+                </li>
+            {% endfor %}
+        </ol>
+        <p>
+            Pour toute question complémentaire, veuillez soumettre votre question via la page <a href="https://www.ish.edu.ml/contact/">contact</a> 
+            ou envoyez-nous un e-mail à <a href="mailto:secretariat@ish.edu.ml">secretariat@ish.edu.ml</a> 
+        </p>
+    </div>

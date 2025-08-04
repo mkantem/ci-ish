@@ -284,7 +284,9 @@ fieldset[disabled] .btn-xl.active {
     color: #fff;
 }
 
-.navbar-default .nav li a:hover,
+.navbar-default .nav li a:hover {
+    color: #ffc107
+}
 .navbar-default .nav li a:focus {
     outline: 0;
     color: #{{ site.data.template.color.primary }};
@@ -305,7 +307,7 @@ fieldset[disabled] .btn-xl.active {
 @media(min-width:768px) {
     .navbar-default-color {
         padding: 25px 0;
-        background-color: transparent;
+        background-color: #3cb371;
     }
     .navbar-default {
         border: 0;
@@ -921,3 +923,18 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #{{ site.data.template.color.primary }};
 }
+
+
+/* Submenu dropdown background and text */
+.navbar-nav .dropdown-menu {
+    background-color: #3cb371 /* or use #006400 for dark green */
+  }
+  
+  .navbar-nav .dropdown-menu > li > a {
+    color: #fff; /* white text */
+  }
+  
+  .navbar-nav .dropdown-menu > li > a:hover {
+    color: #ffc107; /* ensure hover text is white */
+  }
+  

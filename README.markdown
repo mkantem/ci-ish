@@ -51,11 +51,11 @@ Two different design:
 _Note: If you forked it and edited `_config.yml` via the online editor on Github, the Github pages may not work. In that case, you will make any changes (add a new line, etc) and push the changes from your local machine via CLI or GUI git._
 
 ## Files Structure
-- The main stylesheet is stored `/css/2016_style`. Both `2016` and `2017` are sharing the same stylesheet.
-- In `/css/2016_style/img` you will find where the pictures in `/2016` are stored at. You will find the images of speakers in `/css/2017_style/img`. This setup is to ensure that we can easily to move from year to year by creating new folders.
-- `_2016_pages` and `_2017_pages` are the folders that store subpages.
-- `_2016_data` and `_2017_data` are the folders that store each sections in home page. Those sections are can be removed by removing or commenting out the `include` code in `_layout/2016_home.html` or `_layout/2017_home.html`.
-- `_data/twenty_16/` and `_data/twenty_17/` contains `data` files for agenda, faqs, home about section data, speakers, and team members information. The data file is in the format of `.yml`. The reason why the folders are named `twenty_16` and `twenty_17` are due to liquid syntax will throw errors if the name contains integer. 
+- The main stylesheet is stored `/css/2016_style`. Both `2016` and `2025` are sharing the same stylesheet.
+- In `/css/2016_style/img` you will find where the pictures in `/2016` are stored at. You will find the images of speakers in `/css/2025_style/img`. This setup is to ensure that we can easily to move from year to year by creating new folders.
+- `_2016_pages` and `_2025_pages` are the folders that store subpages.
+- `_2016_data` and `_2025_data` are the folders that store each sections in home page. Those sections are can be removed by removing or commenting out the `include` code in `_layout/2016_home.html` or `_layout/2025_home.html`.
+- `_data/twenty_16/` and `_data/twenty_25/` contains `data` files for agenda, faqs, home about section data, speakers, and team members information. The data file is in the format of `.yml`. The reason why the folders are named `twenty_16` and `twenty_25` are due to liquid syntax will throw errors if the name contains integer. 
 - In order to view PDF correctly, sharing setting in Google Drive must set to "Public on the web".
 
 ## Enjoy!

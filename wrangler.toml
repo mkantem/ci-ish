@@ -1,6 +1,7 @@
-name = "ci-ish"
+name = "colloque-ish"
 type = "site"
 
 [site]
 bucket = "./_site"
-entry-point = "."
+entry-point = "workers-site"
+

@@ -1,0 +1,6 @@
+name = "ci-ish"
+type = "site"
+
+[site]
+bucket = "./_site"
+entry-point = "."

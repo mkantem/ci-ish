@@ -1,7 +1,6 @@
 name = "colloque-ish"
-type = "site"
+compatibility_date = "2025-08-04"
 
 [site]
 bucket = "./_site"
-entry-point = "workers-site"
 

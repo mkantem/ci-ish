@@ -1,4 +1,5 @@
 name = "colloque-ish"
+main = "worker.js"
 compatibility_date = "2025-08-04"
 
 [site]

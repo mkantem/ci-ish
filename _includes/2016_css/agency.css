@@ -938,17 +938,5 @@ body {
     color: #ffc107; /* ensure hover text is white */
   }
 
-@media (max-width: 768px) {
-  /* Ensure dropdown menus are visible and stacked in collapsed navbar */
-  .navbar-nav .open .dropdown-menu {
-    display: block;
-    position: static;
-    float: none;
-    width: auto;
-    margin-top: 0;
-    background: transparent;
-    border: 0;
-    box-shadow: none;
-  }
-}
+
   

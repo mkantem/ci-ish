@@ -9,6 +9,7 @@ html {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   height: 100%;
+  overflow-x: hidden;
 }
 
 *, *:before, *:after {
@@ -18,7 +19,7 @@ html {
 }
 
 body {
-    position: absolute;
+    position: relative; /* prevent off-canvas positioning from creating horizontal scroll */
     margin: 0;
     padding-bottom: 90px;
     min-height: 100%;

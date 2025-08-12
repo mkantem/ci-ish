@@ -6,12 +6,19 @@
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
-    $('a.page-scroll').bind('click', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
-        event.preventDefault();
+    $('a.page-scroll').on('click', function(event) {
+        var href = this.getAttribute('href');
+        // Only handle pure same-page hash links (e.g., '#about')
+        if (!href || href.charAt(0) !== '#') {
+            return; // allow normal navigation
+        }
+        var $target = $(href);
+        if ($target.length) {
+            $('html, body').stop().animate({
+                scrollTop: $target.offset().top
+            }, 1500, 'easeInOutExpo');
+            event.preventDefault();
+        }
     });
 });
 

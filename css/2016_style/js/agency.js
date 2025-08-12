@@ -20,9 +20,40 @@ $('body').scrollspy({
     target: '.navbar-fixed-top'
 })
 
-// Closes the Responsive Menu on Menu Item Click
-$('.navbar-collapse ul li a').not('.dropdown-toggle, [data-toggle="dropdown"]').click(function() {
-    $('.navbar-toggle:visible').click();
+// Mobile: toggle dropdown manually on touch/click for collapsed navbar
+$('.navbar').on('touchstart click', 'a.dropdown-toggle', function(event) {
+    var isCollapsed = $('.navbar-toggle').is(':visible');
+    if (isCollapsed) {
+        event.preventDefault();
+        event.stopPropagation();
+        var $parent = $(this).parent();
+        $parent.toggleClass('open');
+        $parent.siblings('.open').removeClass('open');
+        return false;
+    }
+});
+
+// Close dropdown when tapping outside in collapsed mode
+$(document).on('touchstart click', function(event) {
+    var isCollapsed = $('.navbar-toggle').is(':visible');
+    if (isCollapsed) {
+        if (!$(event.target).closest('.navbar .dropdown').length) {
+            $('.navbar .dropdown.open').removeClass('open');
+        }
+    }
+});
+
+// Close the collapsed navbar only when a real link is selected (not dropdown toggles)
+$('.navbar-collapse.in').on('click', 'a', function(event) {
+    var $link = $(this);
+    // If it's a dropdown toggle, do not close
+    if ($link.is('.dropdown-toggle')) {
+        event.preventDefault();
+        event.stopPropagation();
+        return false;
+    }
+    // Otherwise close the menu
+    $('.navbar-toggle:visible').trigger('click');
 });
 
 $('div.modal').on('show.bs.modal', function() {

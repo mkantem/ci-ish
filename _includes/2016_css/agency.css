@@ -9,7 +9,6 @@ html {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   height: 100%;
-  overflow-x: hidden;
 }
 
 *, *:before, *:after {
@@ -19,7 +18,7 @@ html {
 }
 
 body {
-    position: relative; /* prevent off-canvas positioning from creating horizontal scroll */
+    position: absolute;
     margin: 0;
     padding-bottom: 90px;
     min-height: 100%;
@@ -283,7 +282,6 @@ fieldset[disabled] .btn-xl.active {
     font-weight: 400;
     letter-spacing: 1px;
     color: #fff;
-    white-space: nowrap;
 }
 
 .navbar-default .nav li a:hover {
@@ -338,19 +336,6 @@ fieldset[disabled] .btn-xl.active {
     }
 }
 
-/* Ensure Bootstrap containers do not exceed viewport width on mobile */
-.container,
-.container-fluid {
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
-/* Prevent rows from creating side scroll when nested improperly */
-.row {
-    margin-left: 0;
-    margin-right: 0;
-}
-
 header {
     height: 100vh;
     text-align: center;
@@ -358,7 +343,7 @@ header {
     background-attachment: scroll;
     background-image: url('{{ site.baseurl }}/css/2016_style/img/header-bg.jpg');
     background-position: center center;
-    background-repeat: no-repeat;
+    background-repeat: none;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;

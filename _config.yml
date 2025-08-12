@@ -2,7 +2,7 @@ title: CI-ISH
 description: > # this means to ignore newlines until "baseurl:"
   Colloque International de l'Institut des Sciences Humaines
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
+url: "https://ci.ish.edu.ml" # the base hostname & protocol for your site
 # Build settings
 markdown: kramdown
 

@@ -27,6 +27,12 @@
   name: Appel à contribution
   info: Consultez ou téléchargez l'appel à contribution
   link: /booklet
+
+- inverted: timeline-inverted
+  img: booklet-icon.png
+  name: Livre des résumés
+  info: Consultez ou téléchargez le Livre des résumés
+  link: /ldr
   
 - inverted: 
   img: icon-faq.jpeg
